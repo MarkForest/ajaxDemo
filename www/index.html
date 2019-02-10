@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Fire!!!</title>
+    <style>
+        .lamp{
+            background-color: #ccc;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .active{
+            background-color: yellow;
+            box-shadow: 10px 10px 50px yellow;
+        }
+        input{
+            outline: none;
+        }
+        .alertLogin{
+            color: deeppink;
+            display: none;
+        }
+        .activeAlert{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lamp">
+
+    </div>
+    <button id="on">Вкл</button>
+    <button id="off">Выкл</button>
+    <button id="onOff">Вкл/Выкл</button>
+    <form action="" name="myForm">
+        <br>
+        <input type="text" name="login"><span class="alertLogin"> Укажите логин!!!</span><br><br>
+        <input type="text" name="email"><br>
+    </form>
+    <script>
+        let login = document.myForm.login;
+        function focus_func() {
+            login.style.border = '1px solid green';
+        }
+        function blur_func() {
+            if(login.value.length<5){
+                login.style.border = '2px solid deeppink';
+                login.nextSibling.classList.add('activeAlert');
+            }
+            else{
+                login.nextSibling.classList.remove('activeAlert');
+            }
+
+        }
+        login.addEventListener('focus', focus_func);
+        login.addEventListener('blur', blur_func);
+
+        let onBtn = document.querySelector('#on');
+        let offBtn = document.querySelector('#off');
+        let onOffBtn = document.querySelector('#onOff');
+        let lamp = document.querySelector('.lamp');
+        function on_click() {
+            lamp.classList.add('active');
+        }
+        function off_click() {
+            lamp.classList.remove('active');
+        }
+        function onOff_click() {
+            lamp.classList.toggle('active');
+        }
+        onBtn.addEventListener('click', on_click);
+        offBtn.addEventListener('click', off_click);
+        onOffBtn.addEventListener('click', onOff_click);
+    </script>
+</body>
+</html>

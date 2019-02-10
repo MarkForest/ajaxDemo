@@ -1,0 +1,7 @@
+C:\Users\Teacher\source\repos\UdpSympleChat\UdpSympleChat\bin\Debug\UdpSympleChat.exe.config
+C:\Users\Teacher\source\repos\UdpSympleChat\UdpSympleChat\bin\Debug\UdpSympleChat.exe
+C:\Users\Teacher\source\repos\UdpSympleChat\UdpSympleChat\bin\Debug\UdpSympleChat.pdb
+C:\Users\Teacher\source\repos\UdpSympleChat\UdpSympleChat\obj\Debug\UdpSympleChat.csprojAssemblyReference.cache
+C:\Users\Teacher\source\repos\UdpSympleChat\UdpSympleChat\obj\Debug\UdpSympleChat.csproj.CoreCompileInputs.cache
+C:\Users\Teacher\source\repos\UdpSympleChat\UdpSympleChat\obj\Debug\UdpSympleChat.exe
+C:\Users\Teacher\source\repos\UdpSympleChat\UdpSympleChat\obj\Debug\UdpSympleChat.pdb
